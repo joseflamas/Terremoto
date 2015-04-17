@@ -1,0 +1,445 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E69876071AE09E740033AB59 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E69876061AE09E740033AB59 /* UIKit.framework */; };
+		E69876091AE09E740033AB59 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E69876081AE09E740033AB59 /* Foundation.framework */; };
+		E698760B1AE09E740033AB59 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E698760A1AE09E740033AB59 /* CoreGraphics.framework */; };
+		E69876111AE09E750033AB59 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E698760F1AE09E750033AB59 /* InfoPlist.strings */; };
+		E69876131AE09E750033AB59 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E69876121AE09E750033AB59 /* main.m */; };
+		E69876171AE09E750033AB59 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E69876161AE09E750033AB59 /* AppDelegate.m */; };
+		E698761A1AE09E750033AB59 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E69876181AE09E750033AB59 /* MainStoryboard.storyboard */; };
+		E698761D1AE09E750033AB59 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E698761C1AE09E750033AB59 /* ViewController.m */; };
+		E69876251AE09E750033AB59 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E69876241AE09E750033AB59 /* SenTestingKit.framework */; };
+		E69876261AE09E750033AB59 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E69876061AE09E740033AB59 /* UIKit.framework */; };
+		E69876271AE09E750033AB59 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E69876081AE09E740033AB59 /* Foundation.framework */; };
+		E698762F1AE09E750033AB59 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E698762D1AE09E750033AB59 /* InfoPlist.strings */; };
+		E69876321AE09E750033AB59 /* TerremotoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E69876311AE09E750033AB59 /* TerremotoTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E69876281AE09E750033AB59 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E69875F91AE09E740033AB59 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E69876011AE09E740033AB59;
+			remoteInfo = Terremoto;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E69876021AE09E740033AB59 /* Terremoto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Terremoto.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E69876061AE09E740033AB59 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E69876081AE09E740033AB59 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E698760A1AE09E740033AB59 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E698760E1AE09E750033AB59 /* Terremoto-Info.plist */ = {isa = PBXFileReference; path = "Terremoto-Info.plist"; sourceTree = "<group>"; };
+		E69876101AE09E750033AB59 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E69876121AE09E750033AB59 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E69876141AE09E750033AB59 /* Terremoto-Prefix.pch */ = {isa = PBXFileReference; path = "Terremoto-Prefix.pch"; sourceTree = "<group>"; };
+		E69876151AE09E750033AB59 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		E69876161AE09E750033AB59 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E69876191AE09E750033AB59 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		E698761B1AE09E750033AB59 /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
+		E698761C1AE09E750033AB59 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E69876231AE09E750033AB59 /* TerremotoTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TerremotoTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E69876241AE09E750033AB59 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		E698762C1AE09E750033AB59 /* TerremotoTests-Info.plist */ = {isa = PBXFileReference; path = "TerremotoTests-Info.plist"; sourceTree = "<group>"; };
+		E698762E1AE09E750033AB59 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E69876301AE09E750033AB59 /* TerremotoTests.h */ = {isa = PBXFileReference; path = TerremotoTests.h; sourceTree = "<group>"; };
+		E69876311AE09E750033AB59 /* TerremotoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TerremotoTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E69875FF1AE09E740033AB59 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E69876071AE09E740033AB59 /* UIKit.framework in Frameworks */,
+				E69876091AE09E740033AB59 /* Foundation.framework in Frameworks */,
+				E698760B1AE09E740033AB59 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E698761F1AE09E750033AB59 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E69876251AE09E750033AB59 /* SenTestingKit.framework in Frameworks */,
+				E69876261AE09E750033AB59 /* UIKit.framework in Frameworks */,
+				E69876271AE09E750033AB59 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E69875F71AE09E740033AB59 = {
+			isa = PBXGroup;
+			children = (
+				E698760C1AE09E740033AB59 /* Terremoto */,
+				E698762A1AE09E750033AB59 /* TerremotoTests */,
+				E69876051AE09E740033AB59 /* Frameworks */,
+				E69876031AE09E740033AB59 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E69876031AE09E740033AB59 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E69876021AE09E740033AB59 /* Terremoto.app */,
+				E69876231AE09E750033AB59 /* TerremotoTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E69876051AE09E740033AB59 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E69876061AE09E740033AB59 /* UIKit.framework */,
+				E69876081AE09E740033AB59 /* Foundation.framework */,
+				E698760A1AE09E740033AB59 /* CoreGraphics.framework */,
+				E69876241AE09E750033AB59 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E698760C1AE09E740033AB59 /* Terremoto */ = {
+			isa = PBXGroup;
+			children = (
+				E69876151AE09E750033AB59 /* AppDelegate.h */,
+				E69876161AE09E750033AB59 /* AppDelegate.m */,
+				E69876181AE09E750033AB59 /* MainStoryboard.storyboard */,
+				E698761B1AE09E750033AB59 /* ViewController.h */,
+				E698761C1AE09E750033AB59 /* ViewController.m */,
+				E698760D1AE09E750033AB59 /* Supporting Files */,
+			);
+			path = Terremoto;
+			sourceTree = "<group>";
+		};
+		E698760D1AE09E750033AB59 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E698760E1AE09E750033AB59 /* Terremoto-Info.plist */,
+				E698760F1AE09E750033AB59 /* InfoPlist.strings */,
+				E69876121AE09E750033AB59 /* main.m */,
+				E69876141AE09E750033AB59 /* Terremoto-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E698762A1AE09E750033AB59 /* TerremotoTests */ = {
+			isa = PBXGroup;
+			children = (
+				E69876301AE09E750033AB59 /* TerremotoTests.h */,
+				E69876311AE09E750033AB59 /* TerremotoTests.m */,
+				E698762B1AE09E750033AB59 /* Supporting Files */,
+			);
+			path = TerremotoTests;
+			sourceTree = "<group>";
+		};
+		E698762B1AE09E750033AB59 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E698762C1AE09E750033AB59 /* TerremotoTests-Info.plist */,
+				E698762D1AE09E750033AB59 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E69876011AE09E740033AB59 /* Terremoto */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E69876351AE09E750033AB59 /* Build configuration list for PBXNativeTarget "Terremoto" */;
+			buildPhases = (
+				E69875FE1AE09E740033AB59 /* Sources */,
+				E69875FF1AE09E740033AB59 /* Frameworks */,
+				E69876001AE09E740033AB59 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Terremoto;
+			productName = Terremoto;
+			productReference = E69876021AE09E740033AB59 /* Terremoto.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E69876221AE09E750033AB59 /* TerremotoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E69876381AE09E750033AB59 /* Build configuration list for PBXNativeTarget "TerremotoTests" */;
+			buildPhases = (
+				E698761E1AE09E750033AB59 /* Sources */,
+				E698761F1AE09E750033AB59 /* Frameworks */,
+				E69876201AE09E750033AB59 /* Resources */,
+				E69876211AE09E750033AB59 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E69876291AE09E750033AB59 /* PBXTargetDependency */,
+			);
+			name = TerremotoTests;
+			productName = TerremotoTests;
+			productReference = E69876231AE09E750033AB59 /* TerremotoTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E69875F91AE09E740033AB59 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = Nerb;
+			};
+			buildConfigurationList = E69875FC1AE09E740033AB59 /* Build configuration list for PBXProject "Terremoto" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E69875F71AE09E740033AB59;
+			productRefGroup = E69876031AE09E740033AB59 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E69876011AE09E740033AB59 /* Terremoto */,
+				E69876221AE09E750033AB59 /* TerremotoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E69876001AE09E740033AB59 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E69876111AE09E750033AB59 /* InfoPlist.strings in Resources */,
+				E698761A1AE09E750033AB59 /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E69876201AE09E750033AB59 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E698762F1AE09E750033AB59 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E69876211AE09E750033AB59 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E69875FE1AE09E740033AB59 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E69876131AE09E750033AB59 /* main.m in Sources */,
+				E69876171AE09E750033AB59 /* AppDelegate.m in Sources */,
+				E698761D1AE09E750033AB59 /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E698761E1AE09E750033AB59 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E69876321AE09E750033AB59 /* TerremotoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E69876291AE09E750033AB59 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E69876011AE09E740033AB59 /* Terremoto */;
+			targetProxy = E69876281AE09E750033AB59 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E698760F1AE09E750033AB59 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E69876101AE09E750033AB59 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		E69876181AE09E750033AB59 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E69876191AE09E750033AB59 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		E698762D1AE09E750033AB59 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E698762E1AE09E750033AB59 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E69876331AE09E750033AB59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E69876341AE09E750033AB59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E69876361AE09E750033AB59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Terremoto/Terremoto-Prefix.pch";
+				INFOPLIST_FILE = "Terremoto/Terremoto-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E69876371AE09E750033AB59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Terremoto/Terremoto-Prefix.pch";
+				INFOPLIST_FILE = "Terremoto/Terremoto-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		E69876391AE09E750033AB59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Terremoto.app/Terremoto";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Terremoto/Terremoto-Prefix.pch";
+				INFOPLIST_FILE = "TerremotoTests/TerremotoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		E698763A1AE09E750033AB59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Terremoto.app/Terremoto";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Terremoto/Terremoto-Prefix.pch";
+				INFOPLIST_FILE = "TerremotoTests/TerremotoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E69875FC1AE09E740033AB59 /* Build configuration list for PBXProject "Terremoto" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E69876331AE09E750033AB59 /* Debug */,
+				E69876341AE09E750033AB59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E69876351AE09E750033AB59 /* Build configuration list for PBXNativeTarget "Terremoto" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E69876361AE09E750033AB59 /* Debug */,
+				E69876371AE09E750033AB59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E69876381AE09E750033AB59 /* Build configuration list for PBXNativeTarget "TerremotoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E69876391AE09E750033AB59 /* Debug */,
+				E698763A1AE09E750033AB59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E69875F91AE09E740033AB59 /* Project object */;
+}
