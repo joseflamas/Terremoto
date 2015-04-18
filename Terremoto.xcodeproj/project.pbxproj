@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E63C63261AE1BAE300878622 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E63C63251AE1BAE300878622 /* MapKit.framework */; };
 		E69876071AE09E740033AB59 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E69876061AE09E740033AB59 /* UIKit.framework */; };
 		E69876091AE09E740033AB59 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E69876081AE09E740033AB59 /* Foundation.framework */; };
 		E698760B1AE09E740033AB59 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E698760A1AE09E740033AB59 /* CoreGraphics.framework */; };
@@ -14,12 +15,14 @@
 		E69876131AE09E750033AB59 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E69876121AE09E750033AB59 /* main.m */; };
 		E69876171AE09E750033AB59 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E69876161AE09E750033AB59 /* AppDelegate.m */; };
 		E698761A1AE09E750033AB59 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E69876181AE09E750033AB59 /* MainStoryboard.storyboard */; };
-		E698761D1AE09E750033AB59 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E698761C1AE09E750033AB59 /* ViewController.m */; };
 		E69876251AE09E750033AB59 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E69876241AE09E750033AB59 /* SenTestingKit.framework */; };
 		E69876261AE09E750033AB59 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E69876061AE09E740033AB59 /* UIKit.framework */; };
 		E69876271AE09E750033AB59 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E69876081AE09E740033AB59 /* Foundation.framework */; };
 		E698762F1AE09E750033AB59 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E698762D1AE09E750033AB59 /* InfoPlist.strings */; };
 		E69876321AE09E750033AB59 /* TerremotoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E69876311AE09E750033AB59 /* TerremotoTests.m */; };
+		E69876411AE0A0250033AB59 /* CentrodeAlertas.m in Sources */ = {isa = PBXBuildFile; fileRef = E69876401AE0A0250033AB59 /* CentrodeAlertas.m */; };
+		E69876441AE0A34D0033AB59 /* CeldadeAlerta.m in Sources */ = {isa = PBXBuildFile; fileRef = E69876431AE0A34D0033AB59 /* CeldadeAlerta.m */; };
+		E698764A1AE0A6260033AB59 /* DetalledelaAlerta.m in Sources */ = {isa = PBXBuildFile; fileRef = E69876491AE0A6260033AB59 /* DetalledelaAlerta.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,25 +36,30 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E63C63251AE1BAE300878622 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		E69876021AE09E740033AB59 /* Terremoto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Terremoto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E69876061AE09E740033AB59 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E69876081AE09E740033AB59 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E698760A1AE09E740033AB59 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		E698760E1AE09E750033AB59 /* Terremoto-Info.plist */ = {isa = PBXFileReference; path = "Terremoto-Info.plist"; sourceTree = "<group>"; };
+		E698760E1AE09E750033AB59 /* Terremoto-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Terremoto-Info.plist"; sourceTree = "<group>"; };
 		E69876101AE09E750033AB59 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E69876121AE09E750033AB59 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		E69876141AE09E750033AB59 /* Terremoto-Prefix.pch */ = {isa = PBXFileReference; path = "Terremoto-Prefix.pch"; sourceTree = "<group>"; };
-		E69876151AE09E750033AB59 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		E69876141AE09E750033AB59 /* Terremoto-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Terremoto-Prefix.pch"; sourceTree = "<group>"; };
+		E69876151AE09E750033AB59 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E69876161AE09E750033AB59 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		E69876191AE09E750033AB59 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		E698761B1AE09E750033AB59 /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
-		E698761C1AE09E750033AB59 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		E69876231AE09E750033AB59 /* TerremotoTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TerremotoTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E69876241AE09E750033AB59 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		E698762C1AE09E750033AB59 /* TerremotoTests-Info.plist */ = {isa = PBXFileReference; path = "TerremotoTests-Info.plist"; sourceTree = "<group>"; };
+		E698762C1AE09E750033AB59 /* TerremotoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TerremotoTests-Info.plist"; sourceTree = "<group>"; };
 		E698762E1AE09E750033AB59 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		E69876301AE09E750033AB59 /* TerremotoTests.h */ = {isa = PBXFileReference; path = TerremotoTests.h; sourceTree = "<group>"; };
+		E69876301AE09E750033AB59 /* TerremotoTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TerremotoTests.h; sourceTree = "<group>"; };
 		E69876311AE09E750033AB59 /* TerremotoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TerremotoTests.m; sourceTree = "<group>"; };
+		E698763F1AE0A0250033AB59 /* CentrodeAlertas.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CentrodeAlertas.h; sourceTree = "<group>"; };
+		E69876401AE0A0250033AB59 /* CentrodeAlertas.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CentrodeAlertas.m; sourceTree = "<group>"; };
+		E69876421AE0A34D0033AB59 /* CeldadeAlerta.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CeldadeAlerta.h; sourceTree = "<group>"; };
+		E69876431AE0A34D0033AB59 /* CeldadeAlerta.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CeldadeAlerta.m; sourceTree = "<group>"; };
+		E69876481AE0A6260033AB59 /* DetalledelaAlerta.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetalledelaAlerta.h; sourceTree = "<group>"; };
+		E69876491AE0A6260033AB59 /* DetalledelaAlerta.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetalledelaAlerta.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E63C63261AE1BAE300878622 /* MapKit.framework in Frameworks */,
 				E69876071AE09E740033AB59 /* UIKit.framework in Frameworks */,
 				E69876091AE09E740033AB59 /* Foundation.framework in Frameworks */,
 				E698760B1AE09E740033AB59 /* CoreGraphics.framework in Frameworks */,
@@ -81,6 +90,7 @@
 		E69875F71AE09E740033AB59 = {
 			isa = PBXGroup;
 			children = (
+				E63C63251AE1BAE300878622 /* MapKit.framework */,
 				E698760C1AE09E740033AB59 /* Terremoto */,
 				E698762A1AE09E750033AB59 /* TerremotoTests */,
 				E69876051AE09E740033AB59 /* Frameworks */,
@@ -114,8 +124,12 @@
 				E69876151AE09E750033AB59 /* AppDelegate.h */,
 				E69876161AE09E750033AB59 /* AppDelegate.m */,
 				E69876181AE09E750033AB59 /* MainStoryboard.storyboard */,
-				E698761B1AE09E750033AB59 /* ViewController.h */,
-				E698761C1AE09E750033AB59 /* ViewController.m */,
+				E698763F1AE0A0250033AB59 /* CentrodeAlertas.h */,
+				E69876401AE0A0250033AB59 /* CentrodeAlertas.m */,
+				E69876481AE0A6260033AB59 /* DetalledelaAlerta.h */,
+				E69876491AE0A6260033AB59 /* DetalledelaAlerta.m */,
+				E69876421AE0A34D0033AB59 /* CeldadeAlerta.h */,
+				E69876431AE0A34D0033AB59 /* CeldadeAlerta.m */,
 				E698760D1AE09E750033AB59 /* Supporting Files */,
 			);
 			path = Terremoto;
@@ -260,7 +274,9 @@
 			files = (
 				E69876131AE09E750033AB59 /* main.m in Sources */,
 				E69876171AE09E750033AB59 /* AppDelegate.m in Sources */,
-				E698761D1AE09E750033AB59 /* ViewController.m in Sources */,
+				E69876411AE0A0250033AB59 /* CentrodeAlertas.m in Sources */,
+				E69876441AE0A34D0033AB59 /* CeldadeAlerta.m in Sources */,
+				E698764A1AE0A6260033AB59 /* DetalledelaAlerta.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,6 +385,8 @@
 		E69876371AE09E750033AB59 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = "$(inherited)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Terremoto/Terremoto-Prefix.pch";
 				INFOPLIST_FILE = "Terremoto/Terremoto-Info.plist";
@@ -430,6 +448,7 @@
 				E69876371AE09E750033AB59 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E69876381AE09E750033AB59 /* Build configuration list for PBXNativeTarget "TerremotoTests" */ = {
 			isa = XCConfigurationList;
@@ -438,6 +457,7 @@
 				E698763A1AE09E750033AB59 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,24 +1,219 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.0" toolsVersion="1906" systemVersion="11A511" targetRuntime="iOS.CocoaTouch" nextObjectID="6" propertyAccessControl="none" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.1" toolsVersion="2182" systemVersion="11G63" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="bi1-c9-aFF">
     <dependencies>
+        <deployment defaultVersion="1296" identifier="iOS"/>
         <development defaultVersion="4200" identifier="xcode"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="902"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1181"/>
     </dependencies>
     <scenes>
-        <scene sceneID="5">
+        <!--Navigation Controller-->
+        <scene sceneID="ZgS-xp-nm0">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
-                <viewController id="2" customClass="ViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="3">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MkL-Jh-P5H" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController definesPresentationContext="YES" id="bi1-c9-aFF" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" barStyle="blackTranslucent" id="egB-sN-upI">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="R1a-04-Ge4" kind="relationship" relationship="rootViewController" id="cHh-sA-Ogy"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="-282" y="11"/>
+        </scene>
+        <!--Centro de Alertas-->
+        <scene sceneID="Ug1-ZA-hoi">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JcL-jQ-m2Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tableViewController id="R1a-04-Ge4" userLabel="Centro de Alertas" customClass="CentrodeAlertas" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="100" sectionHeaderHeight="22" sectionFooterHeight="22" id="xPq-Dm-cgV" userLabel="Vista de la Tabla de Alertas">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="celdadeAlerta" rowHeight="100" id="GMs-H4-Ipi" userLabel="Celda de Alerta" customClass="CeldadeAlerta">
+                                <rect key="frame" x="0.0" y="22" width="320" height="100"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="300" height="99"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="0.0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="XoO-co-uiN" userLabel="Magnitud">
+                                            <rect key="frame" x="11" y="23" width="135" height="70"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="70"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="UBICACION" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="20" id="a47-gK-zsN" userLabel="Ubicacion">
+                                            <rect key="frame" x="154" y="23" width="146" height="70"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="20"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <connections>
+                                    <outlet property="magnitud" destination="XoO-co-uiN" id="dw6-RV-sVj"/>
+                                    <outlet property="ubicacion" destination="a47-gK-zsN" id="fVm-2c-plo"/>
+                                    <segue destination="R6j-j1-TGN" kind="push" identifier="segueDetalle" id="NAj-9i-A2a"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="R1a-04-Ge4" id="RxA-zt-1WR"/>
+                            <outlet property="delegate" destination="R1a-04-Ge4" id="m9k-xA-Nr0"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Titulo del Feed" id="67y-r7-Qfs" userLabel="Titulo del Feed">
+                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="Abi-hc-djo" userLabel="Boton para Refrescar">
+                            <connections>
+                                <action selector="refrescarFeed:" destination="R1a-04-Ge4" id="O0M-aD-xq1"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="barradeNavedacion" destination="67y-r7-Qfs" id="ghC-QK-cND"/>
+                        <outlet property="vistadelaTabladeAlertas" destination="xPq-Dm-cgV" id="EsN-RR-XTO"/>
+                    </connections>
+                </tableViewController>
+            </objects>
+            <point key="canvasLocation" x="97" y="11"/>
+        </scene>
+        <!--Detalle de la Alerta-->
+        <scene sceneID="VZ7-lE-VFO">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vsp-Xt-YF2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController storyboardIdentifier="detalledelaAlerta" id="R6j-j1-TGN" userLabel="Detalle de la Alerta" customClass="DetalledelaAlerta" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XOS-WY-AqS" userLabel="Vista del Detalle">
                         <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Longitud" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="20" id="A6R-RI-3ri" userLabel="Longitud">
+                                <rect key="frame" x="98" y="165" width="119" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Latitud" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="20" id="V12-mE-Lf4" userLabel="Latitud">
+                                <rect key="frame" x="98" y="191" width="119" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Profundidad" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="20" id="tsh-GD-bQQ" userLabel="Profundidad">
+                                <rect key="frame" x="98" y="216" width="119" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="LATITUDE:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="pHg-q0-Ccy">
+                                <rect key="frame" x="3" y="165" width="92" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="LONGITUDE:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="f4D-MR-718">
+                                <rect key="frame" x="3" y="191" width="92" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="DEPTH:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="yaa-Op-cRX">
+                                <rect key="frame" x="3" y="216" width="92" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="MAGNITUDE" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="Oax-Pd-btd">
+                                <rect key="frame" x="222" y="216" width="92" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Fecha" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="qdn-Hx-48s" userLabel="Fecha">
+                                <rect key="frame" x="8" y="127" width="209" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Helvetica-LightOblique" family="Helvetica" pointSize="19"/>
+                                <color key="textColor" red="0.13043478260869568" green="0.13043478260869568" blue="0.13043478260869568" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="UBICACION" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="20" id="14C-Cq-ntq" userLabel="Ubicacion">
+                                <rect key="frame" x="8" y="52" width="304" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="24"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="shadowColor" red="0.94800866168478259" green="0.94800866168478259" blue="0.94800866168478259" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="9.99" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="VTb-g2-mxj" userLabel="Magnitud">
+                                <rect key="frame" x="214" y="165" width="104" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="47"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" id="toh-sO-zIK">
+                                <rect key="frame" x="0.0" y="246" width="320" height="214"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            </mapView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="9rJ-FZ-lzV"/>
+                    <connections>
+                        <outlet property="fecha" destination="qdn-Hx-48s" id="5tB-Dt-lDC"/>
+                        <outlet property="latitud" destination="V12-mE-Lf4" id="Dgq-6k-53C"/>
+                        <outlet property="longitud" destination="A6R-RI-3ri" id="OdM-Ig-tjV"/>
+                        <outlet property="magnituddelTemblor" destination="VTb-g2-mxj" id="vIa-cC-JEP"/>
+                        <outlet property="mapa" destination="toh-sO-zIK" id="trK-hg-b64"/>
+                        <outlet property="profundidad" destination="tsh-GD-bQQ" id="np3-ZK-StJ"/>
+                        <outlet property="ubicacion" destination="14C-Cq-ntq" id="2R9-Rz-CbN"/>
+                    </connections>
                 </viewController>
             </objects>
+            <point key="canvasLocation" x="464" y="11"/>
         </scene>
     </scenes>
+    <classes>
+        <class className="CeldadeAlerta" superclassName="UITableViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CeldadeAlerta.h"/>
+            <relationships>
+                <relationship kind="outlet" name="magnitud" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="ubicacion" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="CentrodeAlertas" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CentrodeAlertas.h"/>
+            <relationships>
+                <relationship kind="action" name="refrescarFeed:"/>
+                <relationship kind="outlet" name="barradeNavedacion" candidateClass="UINavigationItem"/>
+                <relationship kind="outlet" name="controldeNavegacion" candidateClass="UINavigationController"/>
+                <relationship kind="outlet" name="vistadelaTabladeAlertas" candidateClass="UITableView"/>
+            </relationships>
+        </class>
+        <class className="DetalledelaAlerta" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/DetalledelaAlerta.h"/>
+            <relationships>
+                <relationship kind="outlet" name="fecha" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="latitud" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="longitud" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="magnituddelTemblor" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="mapa" candidateClass="MKMapView"/>
+                <relationship kind="outlet" name="profundidad" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="ubicacion" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
