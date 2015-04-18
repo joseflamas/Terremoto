@@ -123,7 +123,7 @@
         NSDictionary *propiedades = [[_ultimasAlertas objectAtIndex:indexPath.row] objectForKey:@"properties"];
         detalledelaAlerta.mag = [NSString stringWithFormat:@"%@", [propiedades objectForKey:@"mag"]];
         detalledelaAlerta.ubi = [NSString stringWithFormat:@"%@", [propiedades objectForKey:@"place"]];
-        NSString *tiempoFeed = [propiedades objectForKey:@"updated"];
+        NSString *tiempoFeed = [propiedades objectForKey:@"time"];
         NSTimeInterval _intervalodeTiempo = ([tiempoFeed longLongValue]/1000.0);
         NSDate *fechaconelTiempodelFeed = [NSDate dateWithTimeIntervalSince1970:_intervalodeTiempo];
         NSDateFormatter *formatodeFecha = [[NSDateFormatter alloc] init];
